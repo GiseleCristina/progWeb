@@ -1,0 +1,14 @@
+div{
+	padding: 2px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: gray;
+	border-width: 11px;
+	border-style: solid;
+	border-color: black;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 16px;
+	border-bottom-left-radius: 60px;
+
+}
