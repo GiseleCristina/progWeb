@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jogo Gomoku</title>
+		<link rel="stylesheet" type="text/css" href="stilo.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div>
+			<h1 tyle="font-family: Arial;" > Jogo Gomoku &nbsp;&nbsp;<!-- espaco em branco --> <button id="iniciar">Iniciar</button> </h1> 
+			<p style="font-family: Arial">
+				O Gomoku, também conhecido como Gobang, é um jogo de tabuleiro estratégico tradicionalmente jogado com peças de Go (peças negras e brancas) em um tabuleiro de Go ligeiramente modificado (15x15 interseções). No entanto, ao contrario deste, uma vez que as peças são colocadas não podem ser movidas ou retiradas do tabuleiro. No inicio do jogo, as negras começam, e os jogadores alternam na colocação de uma pedra da sua cor em uma interseção vazia. O vencedor é o primeiro jogador a obter uma linha ininterrupta de cinco pedras na horizontal, vertical ou diagonal.
+				X = jogador 1, 0 = Jogador 2
+			</p> 
+			<table border="8" style="float:left">
+				<tr>
+					<td>
+						<script language="JavaScript">
+							document.writeln("<table>");
+							for (i=0; i < 15; i++) { //Linhas
+								document.writeln("<tr>");
+				  				for (j=0; j < 15; j++) {//Colunas
+				    				document.write("<td> <a href=\"javascript:Clicked("+i+","+j+")\"> <img src=\"0.png\" width=32 /></a></td>");
+				    			}
+				  				document.writeln("</tr>");
+							}
+							document.writeln("</table>");
+						</script>
+					</td>
+				</tr>
+			</table>
+
+			<div border="3" style="float:left; margin: 2px">	
+			<table border="8">
+				<tr>
+				 	<td> <a> Jogador da vez</a></td>
+				</tr>
+				<tr>
+					<td>
+				    	<div style="text-align: center">
+							<img id="jogador_1" class="jogador" src="1.png" width=32 />
+							<img id="jogador_2" class="jogador" src="2.png" width=32 />
+						</div>
+					</td>
+				</tr>
+			</table>
+			</div>
+
+		</div>
+		<div id="popup" class="popup"> 
+     		<div>Jogador Fulalinho ganhou.</div>
+     		<p><small class="fechar"><a href="javascript: fechar();">X</a></small></p>
+   		</div>
+
+		<script language="JavaScript" src="script.js"></script>
+	</body>
+</html>
