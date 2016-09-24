@@ -1,0 +1,15 @@
+#iniciar{
+	display: inline-block;
+	background-color: #0068B4;
+	color: #FF00FF;
+	padding: 10px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 0px;
+}
+#iniciar:hover {
+	background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.25));
+	cursor: pointer;
+}
